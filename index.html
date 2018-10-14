@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Validform - 一行代码搞定整站的表单验证！- Jquery表单验证插件</title>
+<link rel="stylesheet" href="./style.css" type="text/css" media="all">
+<link type="image/x-icon" href="./favicon.ico" rel="shortcut icon"/>
+<link rel="stylesheet" href="./css/wp-syntax.css" type="text/css" media="screen" />
+</head>
+
+<body class="home blog">
+<div class="header">
+    <div class="wraper">
+    	<h1><a href="./index.html">Validform</a></h1>
+        <ul class="nav">
+            <li><a href="./index.html"  class="current">关于Validform</a></li>
+            <li><a href="./demo.html">Demo</a></li>
+            <li><a href="./document.html">文档</a></li>
+            <li><a href="./download.html">下载</a></li>
+            <li><a href="./help.html">帮助</a></li>
+        </ul>
+    </div>
+</div>
+<div class="gallery">
+    <div id="gallery" class="wraper">
+        <ul id="myRoundabout">
+            <li><img src="./images/slide1.jpg" alt="Validform - 表单验证的完美解决方案"></li>
+            <li><img src="./images/slide2.jpg" alt="Validform - 强大的自定义datatype功能"></li>
+            <li><img src="./images/slide3.jpg" alt="Validform - 外调插件实现密码强度的验证"></li>
+        </ul>
+    </div>
+</div>
+  
+<div class="main">
+	<div class="wraper cls">
+        <div class="content fl">
+        	<h2>关于<span>Validform</span></h2>
+        	<p class="red" style="margin-bottom:8px;">Validform：一行代码搞定整站的表单验证！</p>
+            <div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1</pre></td><td class="code"><pre style="font-family:monospace;" class="javascript">$<span style="color: #009900;">(</span><span style="color: #3366CC;">".demoform"</span><span style="color: #009900;">)</span>.<span style="color: #660066;">Validform</span><span style="color: #009900;">(</span><span style="color: #009900;">)</span><span style="color: #339933;">;</span></pre></td></tr></tbody></table></div>
+            
+            <p>为什么能如此方便？插件的核心思想就是把所有的验证条件及验证提示信息绑定到每个表单元素，让验证代码在执行时只是核对表单下各元素的值是否跟绑定的验证条件相符，这样你可以随便添加或者去掉任一表单元素而不必修改验证代码，从而使仅用一行代码去完成整站的表单验证的梦想成为现实！</p>
+            
+            <strong>功能简介：</strong>
+            <ul class="lireset mt10 mb18">
+            	<li>可以在input上直接绑定正则，可以自定义datatype，自定义datatype可以是正则，也可以是函数，datatype可以累加或单选，甚至还可以对datatype规则执行简单的逻辑运算。内置10类常见的格式验证；</li>
+                <li>可以自定义提示方式，可以实现你想要的任何提示效果。内置了4种常见的提示方式；</li>
+                <li>可以对表单下的某一块区域或具体的某个表单元素单独进行验证，并可以选择验证后需不需要显示出错信息，还能得到一个值来判断被检测对象是否通过了验证；</li>
+                <li>可以轻松的取消或恢复对表单下的某一块区域或具体的某个表单元素的验证；</li>
+                <li>强大的ajax功能，很轻松的可以实现实时验证以及表单的ajax提交；可以灵活的设置ajax提交时的参数；</li>
+                <li>智能的出错信息提示：会根据绑定的datatype输出相应的出错信息，另外还可以在自定义datatype里返回具体的出错信息，错误信息里可以使用html标签，如果页面里没有显示出错信息的标签，会根据tiptype值自动创建。可以选择在没有输入时不提示和只在提交表单时有信息提示。可以选择一次提示单个错误或一次显示全部出错信息。可以自己设置默认的提示文字；</li>
+                <li>可以在表单开始检测前和表单检测通过后，提交表单之前绑定事件；</li>
+                <li>当前版本外调插件可以实现文件上传检测、密码强度检测、日期控件和表单美化效果；</li>
+                <li>丰富的Validform对象的属性和方法，给你的验证操作带来无限的可能。</li>
+            </ul>
+            
+            <span class="mr10 red">[2013-03-31]</span><strong class="green">Validform v5.3.2 更新修复以下功能：</strong>
+            <ul class="lireset2 mb18">
+                <li>config方法还能为已经初始化过的表单重新配置参数了；</li>
+                <li>一个表单有多个实时验证时不能正确验证的bug；</li>
+                <li>执行submitForm方法会提交对象下的所有表单了，之前是只提交第一个表单，如<code>var demo=$(".formsub").Validform(); demo.submitForm();</code> 执行提交方法后，demo内的所有formsub都会提交；</li>
+                <li>没有submit按钮时，当input获得焦点，按下enter键也能提交表单了；</li>
+                <li>对于自定义datatype，还可以通过Validform对象的tipmsg.w扩展默认提示文字了，之前只能通过$.Tipmsg.w扩展；</li>
+                <li>智能提示在某些情况下的bug修正（如ie8下出现逗号、label出现换行时智能提示不能正确显示、一行有2列的情况下把2列的label都提取出来当错误提示）；</li>
+                <li>其他细节调整。</li>
+            </ul>
+            
+            <span class="mr10 red">[2013-02-23]</span><strong>Validform v5.3.1 更新修复以下功能：</strong>
+            <ul class="lireset2 mb18">
+                <li>增加了label参数；</li>
+                <li>支持jquery 1.4.3-1.9.0+版本；</li>
+                <li>调整了ajaxurl直接附带参数时的处理方式，现在参数不会做另外解析，仍附带在地址后面，所以需要用get方式去获取地址后面带的参数；</li>
+                <li>智能提示：对于多选、下拉、单选会提示为"选择"而不是"填写"；</li>
+                <li>提供了datatype扩展文件<a href="./Validform/Validform_Datatype.js">Validform_Datatype.js</a>下载；</li>
+                <li>其他细节调整。</li>
+            </ul>
+            
+            <span class="mr10 red">[2012-12-28]</span><strong>Validform v5.3 更新修复以下功能：</strong>
+            <ul class="lireset2 mb18">
+                <li>Validform对象增加了config方法；</li>
+                <li>表单元素上可以绑定sucmsg属性了，用来指定验证成功时的提示文字；</li>
+                <li>修改了信息提示方式，对于没有绑定errormsg的对象，会根据所绑定的datatype输出相应的出错信息；<br>
+                对于没有绑定nullmsg的对象，会自动查找类名为Validform_label下的文字作为提示文字；</li>
+                <li>如果页面里没有显示出错信息的标签，会根据tiptype值自动创建；</li>
+                <li>改变了ajax错误的处理方式，callback函数在ajax提交表单遇服务端错误时也会执行；</li>
+                <li>Validform对象的submitForm()和ajaxForm()方法增加了url参数，如果传入了url参数，表单将会提交到这个地址而不是表单action属性或config方法里所指定的地址；</li>
+                <li>细节功能增强：当提交表单时，如果表单中的某项已经在执行ajax检测，这时该项ajax结束后表单可以继续提交了；</li>
+                <li>修改了tipSweep参数的含义，当传入tipSweep=true时，只在表单提交时触发检测，blur事件将不会触发检测（实时验证会在后台进行，不会显示检测结果）；</li>
+                <li>修正了check方法的bug，修正了绑定ignore时，ajaxurl不能执行的问题等；</li>
+                <li>插件的调用做了点改进，对于日期、swfupload和密码强度检测这三个插件，绑定了plugin属性即可以初始化对应的插件，可以不用在validform初始化时传入空的 usePlugin；修改使用addRule方法绑定验证时，插件不能初始化的bug；</li>
+                <li>修正了ie6下自定义提交按钮时表单不能提交的问题。</li>
+            </ul>
+            
+        </div>
+        
+        <div class="aside fr">
+        	<h3>下载<span>Validform</span></h3>
+        	<p class="mb22 download">
+                <a href="./Validform/v5.3.2/Validform_v5.3.2.js" target="_blank">Validform v5.3.2 [开发版]</a> <i class="gray">45Kb</i><br />
+                <a href="./Validform/v5.3.2/Validform_v5.3.2_min.js" target="_blank">Validform v5.3.2 [压缩版]</a> <i class="gray">21Kb</i>
+            </p>
+            
+            <h3>联系<span>我们</span></h3>
+            <p>QQ群①：17254794 <span class="gray">[500人]</span><br />
+                QQ群②：255020584 <span class="gray">[500人]</span><br />
+                QQ群③：69245664 <span class="gray">[500人]</span><br />
+                QQ群④：283374137 <span class="gray">[500人]</span><br />
+                QQ群⑤：199462746 <span class="gray">[200人]</span><br />
+                QQ群⑥：272148906 <span class="gray">[200人]</span><br />
+            <!--QQ群⑦：92861952<br />-->
+            邮&nbsp;&nbsp;箱：<a href="###"><span class="__cf_email__" data-cfemail="7d151c14180f1e191f12043d1a101c1411531e1210">[email&#160;protected]</span></a><br>
+			付费功能定制请联系QQ：348349238</p>
+            
+            <style>#myad:hover span{display: block!important;}</style>
+            <h3 style="padding-left:0;margin-bottom:15px;white-space:nowrap;">赞助商 <span style="font-size:.66em;color:orange">惠品生活-用心做，好品质</span></h3>
+            <a id="myad" target="_blank" href="http://huipinsh.taobao.com" style="display:block; height: 167px; overflow: hidden; position: relative;">
+                <img src="./myad.png" alt="惠品生活-用心做，好品质" />
+                <span style="display:none; width: 100%; height: 167px; background: url(./myad.png) 0 -167px; position: absolute; left:0; top: 0;"></span>
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+
+<script type="text/javascript" src="./js/jquery-1.6.2.min.js" ></script>
+<script type="text/javascript" src="./js/roundabout.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#myRoundabout').roundabout({
+		 minOpacity:1,
+		 minScale:0.7
+	});
+	
+	window.___gcfg = {lang: 'zh-CN'};
+	
+	(function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	})();
+})
+</script>
+
+<div class="footer">
+    <div class="wraper">
+        <p class="fl">Copyright &copy; <a href="#">瑞金佬的前端路</a></p>
+    </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81001026-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

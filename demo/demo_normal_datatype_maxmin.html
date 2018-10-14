@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Demo - Validform - 一行代码搞定整站的表单验证！ &copy;瑞金佬的前端路</title>
+<link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+<link href="./css/demo.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>  
+<div class="header">
+    <div class="wraper">
+    	<h1><a href="../index.html">Validform</a></h1>
+        <ul class="nav">
+            <li><a href="../index.html">关于Validform</a></li>
+            <li><a href="../demo.html" class="current">Demo</a></li>
+            <li><a href="../document.html">文档</a></li>
+            <li><a href="../download.html">下载</a></li>
+            <li><a href="../help.html">帮助</a></li>
+            
+        </ul>
+    </div>
+</div>
+<div class="main">
+    <div class="wraper">
+        <p class="tr"><a href="../demo.html" class="blue ml10 fz12">返回示例首页&raquo;</a></p>
+        
+    	<h2 class="green">通过自定义datatype验证最多或至少选择n项</h2>
+        
+        <form class="registerform" action="ajax_post.php">
+            <table width="100%" style="table-layout:fixed;">
+                <tr>
+                    <td class="need" style="width:10px;">*</td>
+                    <td style="width:70px;">爱好：</td>
+                    <td style="width:205px;">
+                        <input name="shoppingsite1" class="rt2" id="shoppingsite21" type="checkbox"  value="1" datatype="need2" nullmsg="请选择您的爱好！" /><label for="shoppingsite21">阅读</label>
+                        <input name="shoppingsite1" class="rt2" id="shoppingsite22" type="checkbox"  value="2" /><label for="shoppingsite22">音乐</label>
+                        <input name="shoppingsite1" class="rt2" id="shoppingsite23" type="checkbox"  value="3" /><label for="shoppingsite23">运动</label>
+                    </td>
+                    <td><div class="Validform_checktip">至少选择2项</div></td>
+                </tr>
+                <tr>
+                    <td class="need">*</td>
+                    <td>购物：</td>
+                    <td>
+                        <input name="shoppingsite2" class="rt2" id="shoppingsite31" type="checkbox"  value="1" datatype="max2" nullmsg="请选择常去的购物网站！" /><label for="shoppingsite31">新蛋</label>
+                        <input name="shoppingsite2" class="rt2" id="shoppingsite32" type="checkbox"  value="2" /><label for="shoppingsite32">淘宝</label>
+                        <input name="shoppingsite2" class="rt2" id="shoppingsite33" type="checkbox"  value="3" /><label for="shoppingsite33">京东</label>
+                    </td>
+                    <td><div class="Validform_checktip">最多选择2项</div></td>
+                </tr>
+                <tr>
+                    <td class="need"></td>
+                    <td></td>
+                    <td colspan="2" style="padding:10px 0 18px 0;">
+                        <input type="submit" value="提 交" /> <input type="reset" value="重 置" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+        <h2>说明：</h2>
+        <div class="tipmsg">
+        	<p>datatype为自定义函数时不能像传入正则时那样自动扩展，如示例中已经定义了need2，这时要是直接使用need3是无效的。</p>
+        </div>
+         
+    </div>
+</div>
+
+<div class="footer">
+    <div class="wraper">
+        <p class="fl">Copyright &copy; <a href="#">瑞金佬的前端路</a></p>
+        
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../Validform/v5.3.2/Validform_v5.3.2_min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	//$(".registerform").Validform();  //就这一行代码！;
+		
+	/**********************
+	传入自定义datatype类型【方式一】;
+	$.extend($.Datatype,{
+		"z2-4" : /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/
+	});
+	**********************/
+	
+	$(".registerform").Validform({
+		tiptype:2,
+		datatype:{//传入自定义datatype类型【方式二】;
+			"need2":function(gets,obj,curform,regxp){
+				var need=2,
+					numselected=curform.find("input[name='"+obj.attr("name")+"']:checked").length;
+				return  numselected >= need ? true : "请至少选择"+need+"项！";
+			},
+			
+			"max2":function(gets,obj,curform,regxp){
+				var atmax=2,
+					numselected=curform.find("input[name='"+obj.attr("name")+"']:checked").length;
+					
+				if(numselected==0){
+					return false;
+				}else if(numselected>atmax){
+					return "最多只能选择"+atmax+"项！";
+				}
+				return  true;
+			}
+			
+		}
+	});
+})
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81001026-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
