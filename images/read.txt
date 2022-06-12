@@ -19,9 +19,11 @@
 上海都市,http://183.207.255.188/live/program/live/ylpdhd/4000000/mnf.m3u8
 上海都市,http://112.132.214.218/liveplay-kk.rtxapp.com/live/program/live/ylpdhd/4000000/mnf.m3u8
 欢笑剧场,http://live.aikan.miguvideo.com/PLTV/88888888/224/3221230739/index.m3u8
+北京新闻,http://111.6.126.218/hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s9/index.m3u8
 东森新闻,http://60.251.59.180:8503/http/60.251.39.91:8081/hls/63/805/ch10.m3u8
 国家地理,http://211.23.114.106:11150/http/60.251.39.91:8081/hls/61/803/ch01.m3u8
 三立新闻,http://211.23.114.106:11375/http/60.251.39.91:8081/hls/65/807/ch18.m3u8
+中天新闻,http://60.251.59.180:8504/.m3u8
 CNN,https://cnn-cnninternational-1-gb.samsung.wurl.com/manifest/playlist_1280x720_3000k.m3u8
 CNN,https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
 FOX News,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8?$全网高清720P
