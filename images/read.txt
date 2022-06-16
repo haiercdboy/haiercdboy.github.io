@@ -3,7 +3,6 @@
 凤凰中文,http://[2409:8c02:21c:60::2b]/live.rxip.sc96655.com/live/test1_4000.m3u8
 凤凰中文,http://39.135.55.105:6610/PLTV/88888888/224/3221227222/index.m3u8?servicetype=1#http://59.44.10.113:9901/tsfile/live/1079_1.m3u8#http://iptv.tvfix.org/hls/fhzw.m3u8
 凤凰中文,http://183.207.249.35/PLTV/3/224/3221226922/index.m3u8
-
 凤凰资讯,http://playtv-live.ifeng.com:80/live/06OLEEWQKN4.m3u8
 凤凰资讯,http://[2409:8087:3428:20:500::100f]:6610/PLTV/88888888/224/3221227226/index.m3u8?servicetype=1&IASHttpSessionId=RR423820220409134714119178
 凤凰资讯,http://[2409:8c02:21c:60::2b]/live.rxip.sc96655.com/live/test2_4000.m3u8
@@ -27,12 +26,11 @@
 中天新闻,http://60.251.59.180:8504/.m3u8
 CNN,https://cnn-cnninternational-1-gb.samsung.wurl.com/manifest/playlist_1280x720_3000k.m3u8
 CNN,https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
-FOX News,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8?$全网高清720P
+FOX News,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 
 央视,#genre#
 CCTV4K,http://39.135.55.105:6610/PLTV/88888888/224/3221226998/index.m3u8?servicetype=1
 CCTV4K,https://p.ggiptv.com/v/4k.m3u8
-
 CCTV1FHD,http://39.134.116.30:8080/PLTV/88888910/224/3221225762/index.m3u8
 CCTV1FHD,http://39.134.116.30:8080/PLTV/88888910/224/3221225618/index.m3u8
 CCTV1FHD,http://39.134.116.30:8080/PLTV/88888910/224/3221225918/index.m3u8
@@ -45,7 +43,6 @@ CCTV1FHD,http://ncyd.jilu8.cn/PLTV/88888910/224/3221225642/index.m3u8
 CCTV1FHD,http://39.135.138.59:18890/PLTV/88888910/224/3221225918/index.m3u8
 CCTV1FHD,http://39.134.65.142/PLTV/88888888/224/3221225816/index.m3u8
 CCTV1FHD,http://111.63.117.13:6060/030000001000/CCTV1-HD/CCTV1-HD.m3u8
-
 CCTV2FHD,http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225619/index.m3u8
 CCTV2FHD,http://39.134.116.30:8080/PLTV/88888910/224/3221225619/index.m3u8
 CCTV2FHD,http://39.135.138.59:18890/PLTV/88888910/224/3221225643/index.m3u8
@@ -55,7 +52,6 @@ CCTV2FHD,http://39.135.138.58:18890/PLTV/88888910/224/3221225643/index.m3u8codey
 CCTV2FHD,http://39.134.115.163:8080/PLTV/88888910/224/3221225643/index.m3u8?icpid=88888888&from=30&hms_devid=1452
 CCTV2FHD,http://ncyd.jilu8.cn/PLTV/88888910/224/3221225619/index.m3u8
 CCTV2FHD,http://39.135.138.59:18890/PLTV/88888910/224/3221225619/index.m3u8
-
 CCTV3FHD,http://39.134.116.30:8080/PLTV/88888910/224/3221225634/index.m3u8
 CCTV3FHD,http://39.135.138.58:18890/PLTV/88888910/224/3221225647/index.m3u8codeyj
 CCTV3FHD,http://ncyd.jilu8.cn/PLTV/88888910/224/3221225647/index.m3u8
@@ -65,24 +61,20 @@ CCTV3FHD,http://ncyd.jilu8.cn/PLTV/88888910/224/3221225634/index.m3u8
 CCTV3FHD,http://39.134.65.141/PLTV/88888888/224/3221225799/index.m3u8
 CCTV3FHD,http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225647/index.m3u8
 CCTV3FHD,http://39.134.115.163:8080/PLTV/88888910/224/3221225647/index.m3u8?icpid=88888888&from=30&hms_devid=1452
-
 CCTV4FHD,http://39.134.116.30:8080/PLTV/88888910/224/3221225621/index.m3u8
 CCTV4FHD,http://39.134.115.163:8080/PLTV/88888910/224/3221225621/index.m3u8?icpid=88888888&from=30&hms_devid=1452
 CCTV4FHD,http://ncyd.jilu8.cn/PLTV/88888910/224/3221225621/index.m3u8
 CCTV4FHD,http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225621/index.m3u8
 CCTV4FHD,http://39.135.138.58:18890/PLTV/88888910/224/3221225621/index.m3u8codeyj
-
 CCTV5FHD,http://39.134.65.141/PLTV/88888888/224/3221225818/index.m3u8
 CCTV5+FHD,http://39.134.65.142/PLTV/88888888/224/3221225507/index.m3u8
 CCTV6FHD,http://39.134.65.141/PLTV/88888888/224/3221225814/index.m3u8
 CCTV8FHD,http://39.134.65.141/PLTV/88888888/224/3221225795/index.m3u8
 CCTV9FHD,http://39.134.65.141/PLTV/88888888/224/3221225676/index.m3u8
 CCTV10FHD,http://39.134.65.141/PLTV/88888888/224/3221225677/index.m3u8
-
 CCTV13FHD,http://39.135.138.58:18890/PLTV/88888910/224/3221225638/index.m3u8codeyj
 CCTV13FHD,http://183.207.249.36:80/PLTV/4/224/3221227387/index.m3u8?UserName=18851042983&MAC=8C:6D:50:4C:91:52&OTTUserT
 CCTV13HD,http://39.134.65.141/PLTV/88888888/224/3221225812/index.m3u8
-
 CCTV-3蓝光,http://shbu.live.bestvcdn.com.cn:8080/live/program/live/cctv3hd/4000000/mnf.m3u8
 CCTV-1蓝光,http://shbu.live.bestvcdn.com.cn:8080/live/program/live/cctv1hd/4000000/mnf.m3u8
 CCTV-5+蓝光,http://shbu.live.bestvcdn.com.cn:8080/live/program/live/cctv5phd/4000000/mnf.m3u8
