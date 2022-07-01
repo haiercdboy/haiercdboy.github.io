@@ -24,6 +24,7 @@
 欢笑剧场,http://live.aikan.miguvideo.com/PLTV/88888888/224/3221230739/index.m3u8
 北京新闻,http://111.6.126.218/hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s9/index.m3u8
 东森新闻,https://ytb.52sf.ga/jmsytb.m3u8?c=9
+三立新闻,http://220.134.196.147:9243/http/60.251.39.91:8081/hls/65/807/ch18.m3u8
 三立新闻,http://60.251.59.180:8506/http/60.251.39.91:8081/hls/65/807/ch18.m3u8
 中天新闻,http://60.251.59.180:8504/.m3u8
 新加坡,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_4.m3u8
@@ -32,6 +33,7 @@ CNN,https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDE
 FOX News,https://fox-foxnewsnow-samsungus.amagi.tv/playlist720p.m3u8
 
 央视,#genre#
+CCTV4K, http://42.63.66.253/tlivectfree-cdn.ysp.cctv.cn/ysp/2000266303.m3u8
 CCTV1FHD,http://39.135.138.59:18890/PLTV/88888910/224/3221225918/index.m3u8
 CCTV1FHD,http://39.134.65.142/PLTV/88888888/224/3221225816/index.m3u8
 CCTV1FHD,http://ncyd.jilu8.cn/PLTV/88888910/224/3221225918/index.m3u8
@@ -196,6 +198,7 @@ CCTV13HD,http://39.134.65.141/PLTV/88888888/224/3221225812/index.m3u8
 天津卫视HD,http://111.40.196.9/PLTV/88888888/224/3221225604/index.m3u8
 
 电影,#genre#
+菲猫影院,http://ws-video.kktv8.com/livekktv-155906661--20220108205224.m3u8
 4K电影,http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000003000004748/index.m3u8?channel-id=wasusyt&Contentid=6000000003000004748&livemode=1&stbId=no
 凤凰电影,http://111.59.189.40:8445/tsfile/live/1022_1.m3u8
 动作电影,http://cache.ott.fifalive.itv.cmvideo.cn:80/1000000004000018653/index.m3u8?channel-id=ystenlive&Contentid=1000000004000018653&livemode=1&stbId=no
@@ -245,6 +248,8 @@ TVB剧场,http://117.148.179.157/PLTV/88888888/224/3221231733/index.m3u8
 刘德华电影,http://112.74.200.9:88/tv000000/m3u8.php?/migu/659315648
 经典电影速看,http://112.74.200.9:88/tv000000/m3u8.php?/migu/627198751
 试
+星光影视[1280*720],http://hpull.kktv8.com/livekktv/128600025/playlist.m3u8
+周润发影院[859*480],http://112.74.200.9:88/tv000000/m3u8.php?/migu/639526984
 
 其他,#genre#
 翡翠台,https://bcovlive-a.akamaihd.net/f23dfe49b06b45d8878b55b4b6909595/us-west-2/5324042807001/4a3bca5b047b4564b18bb12dfa26ba62/playlist_ssaiM.m3u8
@@ -350,6 +355,47 @@ HKC有线直播新闻台,https://api.leonardpark.dev/live/icable/110
 創世電視,https://cdn.deepcore.online/hlsme/ctv_hk.m3u8
 港开电视,https://cdn.hkdtmb.com/hls/77/index.m3u8
 国际财经,https://cdn.hkdtmb.com/hls/76/index.m3u8
+八大戏剧,http://220.134.196.147:9219/http/60.251.39.91:8081/hls/66/808/ch23.m3u8
+八大综合,http://220.134.196.147:9220/http/61.221.81.94:8088/hls/66/808/ch21.m3u8
+三立台湾,http://220.134.196.147:9221/http/60.251.39.91:8081/hls/65/807/ch20.m3u8
+三立都会,http://220.134.196.147:9222/http/60.251.39.91:8081/hls/65/807/ch19.m3u8
+东森综合,http://220.134.196.147:9224/http/60.251.39.91:8081/hls/63/805/ch12.m3u8
+东森超视,http://220.134.196.147:9225/http/60.251.39.91:8081/hls/64/806/ch14.m3u8
+中天综合,http://220.134.196.147:9226/http/60.251.39.91:8081/hls/67/809/ch25.m3u8
+中天娱乐,http://220.134.196.147:9227/http/60.251.39.91:8081/hls/67/809/ch26.m3u8
+龙华卡通,http://220.134.196.147:9228/http/59.120.8.187:8066/hls/210/10013/cstv13.m3u8
+MuchTV,http://220.134.196.147:9229/http/60.251.39.91:8081/hls/72/814/ch45.m3u8
+东森戏剧,http://220.134.196.147:9230/http/60.251.39.91:8081/hls/64/806/ch13.m3u8
+纬来戏剧,http://220.134.196.147:9233/http/60.251.39.91:8081/hls/69/811/ch33.m3u8
+龙华戏剧,http://220.134.196.147:9234/http/59.120.8.187:8066/hls/210/10010/cstv10.m3u8
+龙华日韩,http://220.134.196.147:9235/http/59.120.8.187:8066/hls/210/10011/cstv11.m3u8
+八大第一,http://220.134.196.147:9236/http/61.221.81.94:8088/hls/66/808/ch22.m3u8
+未来日本,http://220.134.196.147:9237/http/60.251.39.91:8081/hls/69/811/ch34.m3u8
+华视新闻,http://220.134.196.147:9238/http/60.251.39.91:8081/hls/61/803/ch03.m3u8
+东森新闻,http://220.134.196.147:9240/http/60.251.39.91:8081/hls/63/805/ch10.m3u8
+中天新闻,http://220.134.196.147:9241/http/60.251.39.91:8081/hls/78/80/ch63max.m3u8
+民视新闻,http://220.134.196.147:9242/http/60.251.39.91:8081/hls/73/815/ch51.m3u8
+三立新闻,http://220.134.196.147:9243/http/60.251.39.91:8081/hls/65/807/ch18.m3u8
+非凡新闻,http://220.134.196.147:9244/http/116.50.42.19:8081/hls/75/817/ch57.m3u8
+非凡商业,http://220.134.196.147:9245/http/116.50.42.19:8081/hls/64/806/ch15.m3u8
+东森财经,http://220.134.196.147:9246/http/116.50.42.19:8081/hls/63/805/ch11.m3u8
+寰宇新闻,http://220.134.196.147:9247/http/116.50.42.19:8081/hls/76/818/ch62.m3u8
+壹新闻台,http://220.134.196.147:9248/http/116.50.42.19:8081/hls/66/808/ch24.m3u8
+CNN新闻,http://220.134.196.147:9249/http/116.50.42.19:8081/hls/68/810/ch29.m3u8
+CNBC新闻,http://220.134.196.147:9220/http/116.50.42.19:8078/hls/24/80/cnbc90.m3u8
+Bloomberg,http://220.134.196.147:9221/http/116.50.42.19:8078/hls/43/80/bloomber.m3u8
+NHK新闻,http://220.134.196.147:9222/http/116.50.42.19:8081/hls/62/804/ch06.m3u8
+卫视电影台,http://220.134.196.147:9223/http/116.50.42.19:8081/hls/62/804/ch07.m3u8
+好莱坞电影,http://220.134.196.147:9224/http/116.50.42.19:8081/hls/74/816/ch55.m3u8
+纬来电影台,http://220.134.196.147:9225/http/116.50.42.19:8081/hls/69/811/ch35.m3u8
+龙华电影台,http://220.134.196.147:9226/http/116.50.42.19:8066/hls/210/10014/cstv14.m3u8
+HBO,http://220.134.196.147:9227/http/116.50.42.19:8081/hls/71/813/ch41.m3u8
+AXN,http://220.134.196.147:9228/http/116.50.42.19:8081/hls/71/813/ch43.m3u8
+Cinemax,http://220.134.196.147:9229/http/116.50.42.19:8081/hls/71/813/ch42.m3u8
+FOXmovies,http://220.134.196.147:9230/http/116.50.42.19:8081/hls/62/804/ch08.m3u8
+FOX频道,http://220.134.196.147:9231/http/116.50.42.19:8081/hls/61/803/ch02.m3u8
+纬来育乐,http://220.134.196.147:9232/http/116.50.42.19:8081/hls/68/810/ch30.m3u8
+纬来体育,http://220.134.196.147:9233/http/59.120.8.187:8081/hls/67/809/ch28.m3u8
 
 韩国,#genre#
 tvN,https://tvn-seezn.pip.cjenm.com/tvn/_definst_/s5/chunklist.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjI4OTQ5OTUsInBhdGgiOiIvdHZuL19kZWZpbnN0Xy9zNSIsInVubyI6IjE2MjI4OTQ2OTU0MzQzNTU1NSIsImlhdCI6MTYyMjg5NDY5NX0.uTI9slMSRoAbTQ0zGWoEWepnugD9iC-LumyD4dUMJSE&solsessionid=fed881ac811e79deffe825f28026f842
