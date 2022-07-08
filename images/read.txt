@@ -10,6 +10,7 @@
 瑞金,http://live.mudu.tv/watch/u2udf0.m3u8
 赣州新闻综合,http://pl1.cloud.dayang.com.cn/live/10062_nfeG7l.m3u8
 赣州公共,http://pl1.cloud.dayang.com.cn/live/10062_Naq1lu.m3u8
+国家地理,http://8.210.36.158/de/twlive.php?id=live1003
 第一财经,http://183.207.255.188/live/program/live/dycjhd/4000000/mnf.m3u8
 第一财经,http://112.132.214.218/liveplay-kk.rtxapp.com/live/program/live/dycjhd/4000000/mnf.m3u8
 东方影视,http://183.207.255.188/live/program/live/dsjpdhd/4000000/mnf.m3u8
