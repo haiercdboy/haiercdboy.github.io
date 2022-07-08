@@ -11,6 +11,8 @@ http://live.mudu.tv/watch/u2udf0.m3u8
 http://[2409:8087:3000:23:0:3::110A]:8112/120000001002/XMTjiangxiwshd/1.m3u8
 #EXTINF:-1 ,国家地理
 http://8.210.36.158/de/twlive.php?id=live1003
+#EXTINF:-1 ,三立新闻
+http://8.210.36.158/de/twlive.php?id=live1016
 
 #EXTINF:-1 ,CCTV-1
 http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001331/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
