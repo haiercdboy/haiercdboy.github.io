@@ -1,12 +1,4 @@
 关注频道,#genre#
-凤凰中文,http://183.207.249.35/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8
-凤凰中文,http://playtv-live.ifeng.com/live/06OLEGEGM4G_tv1.m3u8
-凤凰中文,http://playtv-live.ifeng.com:80/live/06OLEGEGM4G.m3u8
-凤凰中文,http://183.207.249.35/PLTV/3/224/3221226922/index.m3u8
-凤凰资讯,http://183.207.249.35/ott.js.chinamobile.com/PLTV/3/224/3221226923/index.m3u8
-凤凰资讯,http://39.135.55.72:6610/PLTV/88888888/224/3221227226/index.m3u8?servicetype=1&IASHttpSessionId=OTT
-凤凰资讯,http://playtv-live.ifeng.com/live/06OLEEWQKN4_tv1.m3u8
-凤凰资讯,http://playtv-live.ifeng.com:80/live/06OLEEWQKN4.m3u8
 瑞金,http://live.mudu.tv/watch/u2udf0.m3u8
 赣州新闻综合,http://pl1.cloud.dayang.com.cn/live/10062_nfeG7l.m3u8
 赣州公共,http://pl1.cloud.dayang.com.cn/live/10062_Naq1lu.m3u8
@@ -91,6 +83,19 @@
 凤凰资讯,http://ott.mobaibox.com/PLTV/4/224/3221226923/index.m3u8
 凤凰资讯,http://[2409:8087:2004:10::2786:474b]/ott.js.chinamobile.com/PLTV/4/224/3221228098/index.m3u8?icpid=4&RTS=1639880648&from=1&hms_devid=221&vqe=3
 凤凰资讯,http://50.7.220.74:8278/phoenixinfo_hd/playlist.m3u8?tid=m7f4a830029be&ct=18336&tsum=74f57bddc0725f74838380086dce3e44
+
+求索动物,http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000002000010046/index.m3u8?channel-id=wasusyt&Contentid=6000000002000010046&livemode=1&stbId=no
+求索动物,http://111.11.123.49:6610/000000001000/6000000002000010046/1.m3u8?stbId=3&livemode=1&IASHttpSessionId=OTT1218020220429143132239553&channel-id=wasusyt&Contentid=6000000002000010046
+求索纪录,http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000002000032052/index.m3u8?channel-id=wasusyt&Contentid=6000000002000032052&livemode=1&stbId=no
+求索纪录,http://111.11.123.49:6610/000000001000/6000000002000032052/1.m3u8?stbId=3&livemode=1&IASHttpSessionId=OTT1218020220429142822239451&channel-id=wasusyt&Contentid=6000000002000032052
+求索科学,http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000002000032344/index.m3u8?channel-id=wasusyt&Contentid=6000000002000032344&livemode=1&stbId=no
+求索科学,http://111.11.123.49:6610/000000001000/6000000002000032344/1.m3u8?stbId=3&livemode=1&IASHttpSessionId=OTT1218020220429143356239632&channel-id=wasusyt&Contentid=6000000002000032344
+求索生活,http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000002000003382/index.m3u8?channel-id=wasusyt&Contentid=6000000002000003382&livemode=1&stbId=no
+
+国家地理,http://8.210.36.158/de/twlive.php?id=live1003
+国家地理台湾,http://50.7.220.74:8278/natgeohd_twn/playlist.m3u8?tid=MB5B4841803948418039&ct=18393&tsum=a2343b2c061fc9de3fa7857e832d9625
+国家地理野生,http://50.7.220.74:8278/natgeowild_twn/playlist.m3u8?tid=mc9d789e8a1bb12836354&ct=17877&tsum=82c5ce1596dc364c112c79b239c3f5e8
+
 
 央视卫视,#genre#
 CCTV-1 综合,http://39.134.66.110/PLTV/88888888/224/3221225816/index.m3u8#http://39.134.115.163:8080/PLTV/88888910/224/3221225618/index.m3u8#http://39.134.115.163:8080/PLTV/88888910/224/3221226221/index.m3u8#http://39.134.115.163:8080/PLTV/88888910/224/3221225918/index.m3u8#http://39.135.138.60:18890/PLTV/88888910/224/3221225618/index.m3u8#http://39.135.138.59:18890/PLTV/88888910/224/3221225642/index.m3u8#http://125.210.152.19:9090/live/hzgq-cctv1gq-h264.m3u8#http://39.135.138.60:18890/PLTV/88888910/224/3221225618/index.m3u8#http://171.108.239.90:8181/tsfile/live/1027_1.m3u8#http://59.44.10.113:9901/tsfile/live/1018_1.m3u8#http://39.135.49.209:6610/PLTV/88888888/224/3221227014/1.m3u8?servicetype=1#http://39.135.49.209:6610/PLTV/88888888/224/3221225829/1.m3u8?servicetype=1#http://39.135.49.209:6610/PLTV/88888888/224/3221225922/1.m3u8?servicetype=1#http://39.135.49.209:6610/PLTV/88888888/224/3221226908/1.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221225829/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221227014/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221226599/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221225922/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221226908/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221226995/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221225829/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221227014/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221226599/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221225922/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221226908/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221226995/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221225812/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221226624/index.m3u8?servicetype=1#http://117.148.179.155/PLTV/88888888/224/3221231468/index.m3u8#http://117.148.179.155/PLTV/88888888/224/3221231471/index.m3u8#http://39.135.34.150:8080/000000001000/1000000001000021973/1.m3u8?xtkg
@@ -211,19 +216,6 @@ CCTV-卫生健康,http://36.152.71.75/tlivectfree-cdn.ysp.cctv.cn/ysp/2012513503
 中国教育1,http://39.135.55.105:6610/PLTV/88888888/224/3221225869/index.m3u8?servicetype=1#http://111.63.117.13:6060/030000001000/G_CETV-1/G_CETV-1.m3u8#http://39.135.55.105:6610/PLTV/88888888/224/3221227067/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221225869/index.m3u8?servicetype=1#http://111.63.117.13:6060/030000001000/G_CETV-1/G_CETV-1.m3u8
 中国教育2,http://39.135.55.105:6610/PLTV/88888888/224/3221227206/index.m3u8?servicetype=1#http://111.63.117.13:6060/030000001000/G_CETV-2/G_CETV-2.m3u8#http://39.135.55.105:6610/PLTV/88888888/224/3221227206/index.m3u8?servicetype=1#http://111.63.117.13:6060/030000001000/G_CETV-2/G_CETV-2.m3u8
 中国教育4,http://39.135.55.105:6610/PLTV/88888888/224/3221227050/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221227192/index.m3u8?servicetype=1#http://111.63.117.13:6060/030000001000/G_CETV-4/G_CETV-4.m3u8#http://39.135.55.105:6610/PLTV/88888888/224/3221227050/index.m3u8?servicetype=1#http://39.135.55.105:6610/PLTV/88888888/224/3221227192/index.m3u8?servicetype=1#http://111.63.117.13:6060/030000001000/G_CETV-4/G_CETV-4.m3u8
-
-求索动物,http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000002000010046/index.m3u8?channel-id=wasusyt&Contentid=6000000002000010046&livemode=1&stbId=no
-求索动物,http://111.11.123.49:6610/000000001000/6000000002000010046/1.m3u8?stbId=3&livemode=1&IASHttpSessionId=OTT1218020220429143132239553&channel-id=wasusyt&Contentid=6000000002000010046
-求索纪录,http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000002000032052/index.m3u8?channel-id=wasusyt&Contentid=6000000002000032052&livemode=1&stbId=no
-求索纪录,http://111.11.123.49:6610/000000001000/6000000002000032052/1.m3u8?stbId=3&livemode=1&IASHttpSessionId=OTT1218020220429142822239451&channel-id=wasusyt&Contentid=6000000002000032052
-求索科学,http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000002000032344/index.m3u8?channel-id=wasusyt&Contentid=6000000002000032344&livemode=1&stbId=no
-求索科学,http://111.11.123.49:6610/000000001000/6000000002000032344/1.m3u8?stbId=3&livemode=1&IASHttpSessionId=OTT1218020220429143356239632&channel-id=wasusyt&Contentid=6000000002000032344
-求索生活,http://cache.ott.fifalive.itv.cmvideo.cn:80/6000000002000003382/index.m3u8?channel-id=wasusyt&Contentid=6000000002000003382&livemode=1&stbId=no
-
-国家地理,http://8.210.36.158/de/twlive.php?id=live1003
-国家地理台湾,http://50.7.220.74:8278/natgeohd_twn/playlist.m3u8?tid=MB5B4841803948418039&ct=18393&tsum=a2343b2c061fc9de3fa7857e832d9625
-国家地理野生,http://50.7.220.74:8278/natgeowild_twn/playlist.m3u8?tid=mc9d789e8a1bb12836354&ct=17877&tsum=82c5ce1596dc364c112c79b239c3f5e8
-
 
 台湾,#genre#
 原住民族,http://streamipcf.akamaized.net/live/_definst_/live_720/chunklist_b1500.m3u8
