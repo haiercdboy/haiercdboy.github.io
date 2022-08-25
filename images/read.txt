@@ -1,4 +1,5 @@
 关注频道,#genre#
+CCTV13, https://live-play.cctvnews.cctv.com/cctv/merge_cctv13_mud.m3u8
 瑞金,http://live.mudu.tv/watch/u2udf0.m3u8
 赣州新闻综合,http://pl1.cloud.dayang.com.cn/live/10062_nfeG7l.m3u8
 赣州公共,http://pl1.cloud.dayang.com.cn/live/10062_Naq1lu.m3u8
