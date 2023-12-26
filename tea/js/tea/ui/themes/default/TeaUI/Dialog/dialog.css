@@ -1,0 +1,315 @@
+.ui-dialog {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 9999;
+	background: rgba(1,5,14,.7);
+	display: none;
+	border: none;
+	padding: 0;
+	font-size: 0;
+	-webkit-animation: fadeIn .1s both;
+  	animation: fadeIn .1s both;
+}
+.ui-dialog:before{
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 90%;
+  vertical-align: middle;
+}
+.ui-dialog-block:before{
+	height: 100%;
+}
+.ui-dialog-hd {
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	position: relative;
+}
+.ui-dialog-inner{
+	display: inline-block;
+	width: 270px;
+	vertical-align: middle;
+  	position: relative;
+  	pointer-events: auto;
+}
+.ui-dialog-cnt {
+	border-radius: 6px;
+	text-align: left;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: rgba(253, 253, 253, 0.95);
+	font-size: 16px;
+	overflow: hidden;
+	position: relative;
+	/*left:0;
+	top: 0;
+	right: 0;
+	bottom: 0;*/
+}
+.ui-dialog-block .ui-dialog-inner{
+	width: 92%;
+	height: 95%;
+	margin-top: 0;
+	background-color: #fff;
+}
+.ui-dialog-block .ui-dialog-cnt{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.ui-dialog-block .ui-dialog-bd{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 42px;
+}
+.ui-dialog-block .ui-btn-group{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.ui-dialog-block .ui-dialog-info{
+	position: absolute;
+	left: 18px;
+	right: 18px;
+	bottom: 18px;
+	top: 45px;
+	overflow: auto;
+	width: auto;
+}
+.ui-dialog-block .ui-dialog-notit .ui-dialog-info{
+	top: 18px;
+}
+.ui-dialog-bd {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	padding: 18px;
+	/*display: -webkit-box;
+	display: box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-box-orient: vertical;*/
+}
+.ui-dialog-bd > .ui-dialog-tit{
+	margin:0 0 8px;
+	width: 100%;
+	text-align: center;
+	line-height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ui-dialog-bd > div,
+.ui-dialog-bd > ul {
+	width: 100%;
+}
+.ui-dialog-ft {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	display: -webkit-box;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-align: center;
+	border-top: 1px solid #e0e0e0;
+	height: 42px;
+	line-height: 42px;
+	font-size: 0;
+}
+.ui-dialog-ft button {
+	color: #00a5e0;
+	text-align: center;
+	border: 0;
+	border-right: 1px #e0e0e0 solid;
+	width: 100%;
+	line-height: 42px;
+	background: transparent;
+	display: block;
+	margin: 0 !important;
+	-webkit-box-flex: 1;
+	-webkit-appearance: none;
+	font-size: 16px;
+	padding: 0;
+}
+.ui-dialog-ft button:active,
+.ui-dialog-ft button:focus{
+	outline: none;
+	background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.ui-dialog-ft button:first-child {
+	border-bottom-left-radius: 6px;
+}
+.ui-dialog-ft button:last-child {
+	border-right: 0;
+	border-bottom-right-radius: 6px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.ui-dialog-ft {
+		position: relative;
+		border: 0;
+		background-position: left top;
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+		background-repeat: repeat-x;
+		-webkit-background-size: 100% 1px;
+	}
+	.ui-dialog-ft button {
+		border-right: 0;
+		background-position: right top;
+		background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+		background-repeat: repeat-y;
+		-webkit-background-size: 1px 100%;
+	}
+	.ui-dialog-ft button:last-child {
+		background: none;
+	}
+}
+
+@-webkit-keyframes tinydown {
+  0%,
+  5% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes tinydown {
+  0%,
+  5% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.ui-dialog-slide:before{
+	height: 98%;
+	vertical-align: bottom;
+}
+.ui-dialog-slide .ui-dialog-inner{
+	width: 93%;
+}
+.ui-dialog-slide .ui-dialog-cnt{
+	background: none;
+}
+.ui-dialog-slide .ui-dialog-bd{
+	background: #fff;
+	border-radius: 6px;
+}
+.ui-dialog-slide .ui-dialog-ft{
+	display: block;
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+	background: none;
+	height: auto;
+}
+.ui-dialog-slide .ui-dialog-ft button{
+	margin-top: 4px!important;
+	border-radius: 6px;
+	background: #fff;
+}
+.ui-dialog-slide .ui-dialog-ft button:active,
+.ui-dialog-slide .ui-dialog-ft button:focus{
+	background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ui-dialog-slide{
+	-webkit-transition: background-color .1s both;
+	transition: background-color .1s both;
+}
+.ui-dialog-hide{
+	background-color: rgba(1,5,14,0);
+}
+.ui-animate{
+	-webkit-animation: tinydown .25s;
+  	animation: tinydown .25s;
+}
+.ui-dialog-slide .ui-animate{
+	-webkit-animation: slideInUp .25s;
+  	animation: slideInUp .25s;
+}
+.ui-dialog-slide.ui-dialog-hide .ui-animate{
+	-webkit-animation: slideOutDown .1s;
+  	animation: slideOutDown .1s;
+}
+
+@-webkit-keyframes slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}

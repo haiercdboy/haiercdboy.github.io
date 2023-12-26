@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>demo</title>
+<style type="text/css">
+html,
+body{
+	height: 100%;
+}
+body{
+	background: #000;
+	margin: 0;
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	perspective: 110%;
+}
+div{
+	text-align: center;
+	font-size: 200px;
+	padding-top: 50%;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.tea-transition>div.tea-page {
+	transition-duration: .8s;
+	transition-timing-function: ease;
+}
+
+/*手指滑动松开后的动画时间*/
+.tea-touch-end>div.tea-page {
+	transition-duration: .8s;
+}
+
+
+/*CSS自定义动画效果*/
+div.tea-page-next {
+	transform-origin: 0% 50%;
+	opacity: .3; 
+	transform: translateX(200%) scale(.4) rotateY(65deg);
+}
+
+div.tea-page-prev {
+	transform-origin: 100% 50%;
+	opacity: .3;
+	transform: translateX(-150%) scale(.4) rotateY(-65deg);
+}
+
+div.tea-page-in {
+	transform: translateX(0);
+}
+</style>
+</head>
+
+<body>
+<div style="background: #7bb7fa;">1</div>
+<div style="background: #60d7a9; display: none;">2</div>
+<div style="background: #fdc162; display: none;">3</div>
+<div style="background: #f68dbb; display: none;">4</div>
+
+<script src="http://bqq.gtimg.com/tea/latest/Tea.js"></script>
+<!--<script src="/static_proxy/Tea.js"></script>-->
+<script>
+Tea.config({
+    base: "../js",
+});
+
+Tea.use(["ui/widget/MobilePage", "lib/zepto"], function(MobilePage, $){
+	$('body').on('touchmove', function(e){
+		e.preventDefault();
+	}).on('click', function(){
+		page.next();
+	});
+	
+	var page = new MobilePage({
+		touchNext: true,
+		touchBack: true,
+		touchBackRate: .2,
+		continuous: true,
+	});
+	
+	page.on('swiping', function(e, $pageOut, $pageIn, rate, move, offset){
+		/*
+		 * $pageOut：要移出的页面, 
+		 * $pageIn：要移入的页面, 
+		 * rate：滑动距离的百分比, 
+		 * move：滑动距离, 
+		 * offset：移入页面需要移动的距离
+		 */
+		$pageIn.css({
+			opacity: rate,
+			transform: 'translateX(' + offset + 'px) scale(' + (rate*.6 + .4) + ') rotateY(' + (move > 0 ? '+' : '-') + 65*(1-rate) + 'deg)'
+		});
+		
+		$pageOut.css({
+			opacity: 1 - rate,
+			transform: 'translateX(' + move + 'px) scale(' + ((1-rate)*.6 + .4) + ') rotateY(' + (move > 0 ? '+' : '-') + 65*rate + 'deg)'
+		});
+		
+	});
+	
+});
+</script>
+
+</body>
+</html>

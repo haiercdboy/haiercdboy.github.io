@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试localStorage</title>
+</head>
+<body>
+<script src="/static_proxy/Tea.js"></script>
+<script>
+Tea.config({
+	localStorage: true
+});
+
+Tea.use(['lib/zepto', 'util/moduleMemory'], function($, mod){
+	mod.renderTpl('/examples/util/tpl.html', {name: 'sean'}).done(function(html){
+		$(html).appendTo('body');
+		
+		mod.renderTpl('/examples/util/tpl.html', {name: 'helly'}).done(function(html){
+			$(html).appendTo('body');
+		});
+	});
+});
+</script>
+</body>
+</html>

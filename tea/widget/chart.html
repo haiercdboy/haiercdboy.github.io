@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>demo</title>
+<link rel="stylesheet" type="text/css" href="/static_proxy/ui/themes/default/TeaUI/base/base.css"/>
+<style>
+.demo{
+	color:#666;
+	padding:20px;
+	background:#eee;
+}
+</style>
+</head>
+
+<body>
+<header class="tea-header"> 
+	<a href="../index.html" class="tea-header-left"><i class="tea-icon tea-icon-back"></i></a>
+	<span>Highcharts 图表</span> 
+</header>
+<div id="container" style="height:400px; "></div>
+
+<script src="/static_proxy/Tea.js"></script>
+<script>
+Tea.config({
+    base: "../js"
+});
+
+Tea.use("chart", function(chart){
+    new chart();
+});
+</script>
+
+</body>
+</html>

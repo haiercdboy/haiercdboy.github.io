@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>demo</title>
+<style>
+.demo{
+	color:#666;
+	padding:20px;
+	background:#eee;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+	
+</div>
+
+<script src="/static_proxy/Tea.js"></script>
+<script>
+Tea.config({
+    base: "../js",
+});
+
+Tea.use("lib/zepto", function($){
+	var e = $.Event('testEvent');
+	
+	$('body').on('testEvent', function(ev){
+		console.log(ev);
+		return false;
+	});
+	
+	$('body').trigger(e);
+	
+	//获取事件的返回值
+	console.log(e.returnValue);
+});
+</script>
+
+</body>
+</html>

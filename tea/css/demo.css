@@ -1,0 +1,118 @@
+html {
+    -ms-touch-action: none;
+}
+html,
+body{
+	height: 100%;
+	-webkit-user-select: none;
+}
+body,
+div,
+h1,
+h3,
+h4,
+p,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+img {
+    display: block;
+    border:none;
+}
+body {
+	width: 100%;
+    *cursor: default;
+	overflow: hidden;
+	font: 12px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
+}
+
+div.tea-page-in{
+	box-shadow: -3px 0 3px rgba(0,0,0,.15);
+	background-color: #FBF9FE;
+}
+
+h1{
+	padding: 36px 0;
+	font-size: 26px;
+	margin: 0;
+	background-color: green;
+	color: #fff;
+	border-bottom: 1px solid #006f00;
+}
+.sample-item {
+	background-color: #fff;
+	border-bottom: 1px solid #dedede;
+}
+.sample-title {
+	padding: 15px;
+	font-size: 18px;
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #FBF9FE;
+	font-weight: bold;
+}
+.sample-content {
+	background: #fff;
+}
+.sample-content .tea-list-link-item{
+	font-size: 16px;
+}
+
+.tea-page>.ui-cont-loading{
+	height: 80%;
+}
+
+.main .tea-page-prev{
+	opacity: 0;
+}
+.main #tea-page-2.tea-page-prev{
+	transform: translateX(-100%);
+	opacity: 1!important;
+}
+#demo{
+	font-size: 16px;
+}
+.doc{
+	margin: 10px;
+	padding: 10px!important;
+	text-align: left!important;
+	background: honeydew;
+}
+.doc h2{
+	color: green;
+    font-size: 18px;
+    padding-left: 10px;
+    border-left: 4px solid green;
+    margin-top: 30px;
+}
+.doc h2:first-child{
+	margin-top: 0;
+}
+.doc p{
+	margin: 8px 0;
+	color: #555;
+}
+
+.doc b{
+	color: #000;
+}
+.demo{
+	padding: 10px!important;
+	text-align: left!important;
+}
+div.demo a{
+	padding: 5px;
+	margin: 5px 0;
+	display: block;
+	color: #00a5e0!important;
+	background: #eee;
+}

@@ -1,0 +1,288 @@
+.mconsole-button {
+  color: #FFF;
+  background-color: #4cb0f9;
+  border-color: #4cb0f9;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.mconsole-button:hover {
+  background-color: #4cb0f9;
+  border-color: #4cb0f9;
+}
+
+.mconsole-button:active {
+  background-color: #2798eb;
+  border-color: #2798eb;
+  color: #0880d7;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mconsole-panel {
+  background: #FFF;
+  border-top: #A3A3A3 solid 1px;
+  width: 100%;
+  height: 200px;
+  display: block;
+  position: fixed;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 49999;
+}
+
+.mconsole-panel.more {
+  height: 450px;
+}
+
+.mconsole-close {
+  line-height: 24px;
+  height: 24px;
+  width: 24px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin-top: -12px;
+  position: absolute;
+}
+
+.mconsole-panel .mconsole-content {
+  display: block;
+  width: 100%;
+  height: 165px;
+  z-index: 51000;
+}
+
+.mconsole-panel.more .mconsole-content {
+  height: 415px;
+}
+
+.mconsole-panel .mconsole-content .mconsole-tab {
+  width: 100%;
+  height: 165px;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.mconsole-panel.more .mconsole-content .mconsole-tab {
+  height: 415px;
+}
+
+.mconsole-content .mconsole-tab.active {
+  display: block;
+}
+
+.mconsole-panel .mconsole-content .mconsole-tab .mconsole-log,
+.mconsole-panel .mconsole-content .mconsole-tab .mconsole-run {
+  display: block;
+  width: 100%;
+  height: 165px;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.mconsole-panel.more .mconsole-content .mconsole-tab .mconsole-log,
+.mconsole-panel.more .mconsole-content .mconsole-tab .mconsole-run {
+  height: 415px;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-clear,
+.mconsole-content .mconsole-tab .mconsole-run .mconsole-start,
+.mconsole-content .mconsole-tab .mconsole-run .mconsole-clear {
+  position: fixed;
+  margin: 0;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  border-radius: 4px;
+  z-index: 50000;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-log-msg,
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-stack-msg,
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-env-msg {
+  word-break: break-all;
+  border-bottom: 1px solid #eee;
+  line-height: 14px;
+  font-size: 14px;
+  padding: 8px 4px;
+  cursor: pointer;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-log-msg.log {
+  color: #000;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-log-msg.info {
+  color: #5089E9;
+  background-color: #EAF3FF;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-log-msg.warn {
+  color: #5C3B00;
+  background-color: #FFFBE6;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-log-msg.error,
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-stack-msg.error {
+  color: #F94600;
+  background-color: #FFEFEF;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-log-msg .time,
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-stack-msg .time {
+  color: #808080;
+  margin-right: 5px;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-stack-msg.info {
+  color: #5089E9;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-stack-msg .extend {
+  display: none;
+  line-height: 20px;
+  padding-top: 5px;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-stack-msg .extend.active {
+  display: block;
+  padding-left: 94px;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-stack-msg .extend .name {
+  color: #881391;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-stack-msg .extend .value {
+  color: #000;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-env-msg .name {
+  color: #881391;
+}
+
+.mconsole-content .mconsole-tab .mconsole-log .mconsole-env-msg .info .name {
+  color: #5089E9;
+}
+
+.mconsole-panel .mconsole-content .mconsole-tab .mconsole-run .mconsole-run-input {
+  width: 75%;
+  margin: 10px 0 0 10px;
+  height: 140px;
+  line-height: 26px;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.mconsole-panel.more .mconsole-content .mconsole-tab .mconsole-run .mconsole-run-input {
+  height: 390px;
+}
+
+.mconsole-panel .mconsole-content .mconsole-tab .mconsole-html .html-info {
+  font-size: 13px;
+  line-height: 17px;
+  word-break: break-all;
+  padding: 4px;
+}
+
+.mconsole-html .html-info .html-node {
+  display: inline-block;
+  margin-bottom: -3px;
+  width: 16px;
+  height: 16px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAABiSURBVCjPY2AYTECWwZ6BDVOYGc4yYFjBIM9wn+EtLhPsGH4w/Ge4xVDIIIpPwX+G3wyHGHwRJjNhsVSCQRKhgAVN+inDEoY5DHcZ/mOz4jnDPAYTJGdjeNORgX0AgpcIAAC7GhKcvGWNUwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxMy0wNC0wM1QxNzoxODowMiswODowMOOvCkMAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTEtMDUtMThUMjM6MTk6MDArMDg6MDByuC6DAAAATXRFWHRzb2Z0d2FyZQBJbWFnZU1hZ2ljayA2LjguOC03IFExNiB4ODZfNjQgMjAxNC0wMi0yOCBodHRwOi8vd3d3LmltYWdlbWFnaWNrLm9yZ1mkX38AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAXdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADQwibsPHwAAABZ0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAA0MHEUz5IAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTMwNTczMTk0MJMExg0AAAATdEVYdFRodW1iOjpTaXplADEuMTlLQkI0CeaLAAAAYHRFWHRUaHVtYjo6VVJJAGZpbGU6Ly8vaG9tZS9mdHAvMTUyMC9lYXN5aWNvbi5jbi9lYXN5aWNvbi5jbi9jZG4taW1nLmVhc3lpY29uLmNuL3BuZy81MjQ5LzUyNDk4MS5wbmflqW3nAAAAAElFTkSuQmCC);
+  -webkit-transform: scale(1.1);
+}
+
+.mconsole-html .html-info .html-node.on {
+  -webkit-transform: scale(1.1) rotate(90deg);
+}
+
+.mconsole-html .html-info .tag-name {
+  color: #881280;
+}
+
+.mconsole-html .html-info .attr-name {
+  color: #994500;
+}
+
+.mconsole-html .html-info .attr-value {
+  color: #1a1aa6;
+}
+
+.mconsole-html .html-info .attr-name + .tag-name,
+.mconsole-html .html-info .attr-value + .tag-name {
+  color: #a894a6;
+}
+
+.mconsole-footer {
+  width: 100%;
+  height: 35px;
+  display: block;
+  background-color: #EEE;
+  z-index: 60000;
+  border-top: #A3A3A3 solid 1px;
+  border-bottom: #A3A3A3 solid 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mconsole-footer .mconsole-footer-tab {
+  width: 20%;
+  height: 33px;
+  float: left;
+  text-align: center;
+  line-height: 33px;
+  cursor: pointer;
+  border-right: #A3A3A3 solid 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+.mconsole-footer .mconsole-footer-tab:last-child {
+  border-right: transparent solid 1px;
+}
+
+.mconsole-footer .mconsole-footer-tab.active {
+  background-color: #2798eb;
+  color: #FFF;
+}
+
+.mconsole-small {
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  line-height: 50px;
+  font-size: 20px;
+  z-index: 50000;
+}
+
+.mconsole-panel .hidden {
+  display: none !important;
+}

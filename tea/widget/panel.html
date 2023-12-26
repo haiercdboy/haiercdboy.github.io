@@ -1,0 +1,183 @@
+<style>
+#page{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.cont{
+    background: #ffffff;
+}
+
+.panel-inner{padding:10px;}
+.cont section{
+    padding: 20px;
+}
+/*demo部分*/
+.demo h4{
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 5px;
+}
+.demo button, .panel button{
+    height: 32px;
+    color: white;
+    font-size: 14px;
+    border:1px solid #cccccc;
+    -webkit-border-radius: 5px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0f97bb), to(#0c607f));
+    text-align: center;
+    cursor: pointer;
+    padding: 0 15px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.demo button:hover{
+    background: -webkit-gradient(linear, left top, left bottom, from(#0c607f), to(#0f97bb));
+}
+.iscroll{
+    float: right;
+}
+
+/*option展示部分*/
+.option h2, .gmu h2, .panel h2{
+    font-weight: bold;
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    font-family: '微软雅黑';
+}
+.option .panel-des{
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+.option .panel-opt, .gmu .gmu-feture{
+    background: #f6feff;
+    border:1px solid #cccccc;
+    -webkit-box-shadow: 2px 2px 2px #cccccc;
+    -webkit-border-radius: 3px;
+    padding:10px;
+}
+.option .panel-opt li{
+    font-size: 14px;
+    padding:10px 0;
+}
+.option .panel-opt .opt-name{
+    font-weight: bold;
+}
+
+/*gmu展示部分*/
+.gmu{
+    clear: both;
+}
+.gmu .gmu-feture{
+    background: #fefaf3;
+}
+.gmu .gmu-feture dt{
+    height: 28px;
+    text-align: left;
+    font-weight: bold;
+    font-family: '微软雅黑';
+    font-size: 16px;
+}
+.gmu .gmu-feture dd{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.panel{}
+.panel button{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e8956c), to(#e25814));
+}
+.panel button:hover{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e25814), to(#e8956c));
+}
+.panel h2{
+    color: #9dd6fe;
+}
+.panel .panel-des{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 22px;
+}
+.panel .panel-dir li{
+    padding:10px;
+}
+.panel .panel-dir a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+.panel .panel-dir a:hover{
+    text-decoration: underline;
+    color: #fc5401;
+}
+.panel .panel-swipe, .panel .panel-opt{
+    font-size: 14px;
+    padding: 15px;
+}
+.wrapper{
+    opacity: 0.9;
+}
+</style>
+
+
+<header class="tea-header"> 
+	<a href="../index.html" class="tea-header-left"><i class="tea-icon tea-icon-back"></i></a>
+	<span>侧边栏</span> 
+</header>
+
+<div id="page">
+    <div class="cont">
+        <section id="panel-demo" class="demo">
+            <h4>panel默认打开</h4>
+            <button id="btn-default">default</button>
+        </section>
+        <section id="cont-panel" class="option">
+            <h2>panel组件</h2>
+            <p class="panel-des">panel是GMU_2.0.5推出的新组件，可以从左边或右边呼出新内容，是一款适合于移动端交互的组件，它具有以下参数：</p>
+            <ul class="panel-opt">
+                <li>
+                    <span class="opt-name">contentWrap:</span> {Dom/Zepto/selector} 主体内容dom选择器或dom元素
+                </li>
+                <li>
+                    <span class="opt-name">scrollMode:</span> {String} 'follow |'disappear' | 'fixed'   Panel滑动方式，follow表示跟随页面滑动，disappear表示页面滑动时panel消失
+                </li>
+                <li>
+                    <span class="opt-name">animate:</span> {Boolean} True | false	Panel出现时是否有动画
+                </li>
+                <li>
+                    <span class="opt-name">display:</span> {String} overlay' | 'reveal' | 'push' Panel出现模式，overlay表示浮层reveal表示在content下边展示，push表示panel将content推出
+                </li>
+                <li>
+                    <span class="opt-name">position:</span> {String} 'left' | 'right' 在右边或左边
+                </li>
+                <li>
+                    <span class="opt-name">dismissible:</span> {Boolean}  True | false	是否在内容区域点击后，panel消失
+                </li>
+                <li>
+                    <span class="opt-name">swipeClose:</span> {Boolean}   True | false	在panel上滑动，panel是否关闭
+                </li>
+                <li>
+                    <span class="opt-name">offset:</span> {Object}  相对于contentWrap的offset
+                </li>
+            </ul>
+        </section>
+
+    </div>
+    <div class="panel">
+    	<div class="panel-inner">
+            <h2>panel组件</h2>
+            <p class="panel-des">panel是GMU_2.0.5推出的新组件，可以从左边或右边呼出新内容，是一款适合于移动端交互的组件，它具有以下参数：</p>
+            <ul class="panel-dir">
+                <li><a href="#cont-panel">1. panel组件参数介绍</a></li>
+                <li><a href="#panel-demo">2. panel演示</a></li>
+                <li><a href="#cont-gmu">3. GMU介绍</a></li>
+            </ul>
+            <button class="panel-close">点击我关闭panel</button>
+            <p class="panel-swipe">向右滑动panel也可以关闭</p>
+		</div>
+    </div>
+</div>

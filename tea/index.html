@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>Tea - Let It Easy</title>
+<link rel="stylesheet" type="text/css" href="js/tea/ui/themes/default/TeaUI/base/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+</head>
+
+<body>
+<div id="home" data-frozen="back">
+	<section>
+	<h1 class="tc">Tea<span> - Let it easy</span></h1>
+	<div class="sample-item">
+		<div class="sample-title">组件</div>
+		<div class="sample-content">
+			<ul class="tea-list-link">
+				<li class="tea-list-link-item">
+					<a href="widget/mobilePage.html" data-require="2"><span>MobilePage<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="widget/fullpage.html" data-require="3"><span>FullPage<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="widget/dialog.html" data-require="4"><span>Dialog<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="widget/loading.html"><span>Loading<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="widget/tips.html"><span>Tips<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="widget/pagination.html"><span>Pagination<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="widget/scrollSpy.html"><span>ScrollSpy<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="widget/refresh.html" data-require="5"><span>Refresh<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="widget/panel.html" data-require="6"><span>Panel<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="widget/calendar.html"><span>Calendar<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="widget/calendarPicker.html"><span>Calendar Picker<i class="tea-icon"></i></span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="sample-item">
+		<div class="sample-title">样式和布局</div>
+		<div class="sample-content">
+			<ul class="tea-list-link">
+				<li class="tea-list-link-item">
+					<a href="ui/grid.html"><span>栅格化布局<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="ui/nav.html"><span>导航<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="ui/outline.html"><span>标题和正文<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="ui/button.html"><span>按钮<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="ui/list.html" data-require="7"><span>列表<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="ui/table.html"><span>表格<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="ui/form.html"><span>表单<i class="tea-icon"></i></span></a>
+				</li>
+				<li class="tea-list-link-item">
+					<a href="ui/icon.html"><span>图标<i class="tea-icon"></i></span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</section>
+</div>
+
+<script src="js/tea/Tea.js"></script>
+<script>
+Tea.config({
+    base: "./js",
+    //debug: true
+});
+
+Tea.use(["home"], function(Home){
+	new Home();
+});
+</script>
+
+</body>
+</html>

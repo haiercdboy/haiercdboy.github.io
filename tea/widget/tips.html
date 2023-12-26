@@ -1,0 +1,67 @@
+
+<header class="tea-header"> 
+	<a href="../index.html" class="tea-header-left"><i class="tea-icon tea-icon-back"></i></a>
+	<span>信息提示</span> 
+</header>
+
+<div class="ui-poptips" style="display: none;"><p class="ui-poptips-cnt"><span class="ui-poptips-txt">提示内容已有Dom</span></p></div>
+
+<div class="demo">
+	<a href="javascript:;" id="d1">显示Tips</a>
+	<a href="javascript:;" id="d2">关闭Tips</a>
+	<a href="javascript:;" id="d3">有Icon的Tips显示1.5s后自动关闭</a>
+	<a href="javascript:;" id="d4">已有Dom创建Tips</a>
+</div>
+
+<div class="doc">
+	<h2>初始化参数</h2>
+	<p>@param {Object} params</p>
+	<p><b>el</b> {dom|selector|$} <br />传入已有dom创建Tips</p>
+	<p><b>content</b> {String} <br />文字内容</p>
+	<p><b>showIcon</b> {Boolean} <br />是否显示icon</p>
+	<p><b>delay</b> {Number} <br />自动消失前停留时长</p>
+	<p><b>single</b> {Boolean} <br />是否单例模式，hide时不会移除dom</p>
+	<p><b>dragonfly</b> {Boolean} <br />显示时是否自动消失</p>
+	
+	<h2>Methods</h2>
+	<p><b>show(msg, dragonfly)</b><br />msg:显示的消息<br />dragonfly:显示后是否自动关闭, 默认不关闭</p>
+	<p><b>hide(remove)</b><br />关闭后是否移除Dom,传入true时不管是否single都会移除</p>
+	<p><b>text(msg)</b><br />msg:显示的消息</p>
+	
+	<h2>Events</h2>
+	<p><b>show</b></p>
+	<p><b>hide</b></p>
+</div>
+
+<script>
+Tea.use(["ui/widget/Tips", "lib/zepto"], function(Tips, $){
+	$('#d1').on('click', function(){
+		tips = new Tips({
+			content: '提示消息',
+			single: true,
+			dragonfly: false
+		});
+	});
+	
+	$('#d2').on('click', function(){
+		tips && tips.hide();
+	});
+	
+	$('#d3').on('click', function(){
+		new Tips({
+			showIcon: true,
+			delay: 1500,
+			content: '提示消息'
+		});
+	});
+	
+	$('#d4').on('click', function(){
+		new Tips({
+			el: '.ui-poptips',
+			delay: 1500,
+			single: true
+		});
+	});
+	
+});
+</script>

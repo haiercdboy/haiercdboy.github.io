@@ -1,0 +1,59 @@
+<style>
+.demo{
+	color:#666;
+	padding:20px;
+	background:#eee;
+}
+</style>
+
+
+<header class="tea-header"> 
+	<a href="../index.html" class="tea-header-left"><i class="tea-icon tea-icon-back"></i></a>
+	<span>日历</span> 
+</header>
+
+<div id="calendar"></div>
+
+<div class="doc">
+	<h2>初始化参数</h2>
+	<p>@param {Object} params</p>
+	<p><b>el</b> {dom|selector|$} <br />会在el里输出日期控件</p>
+	<p><b>className</b> {String} <br />内置ios7风格 可以传入 'ios7'</p>
+	<p><b>swipeable</b> {Boolean} <br />左右滑动是否可以切换月份</p>
+	<p><b>monthChangeable</b> {Boolean} <br />是否可以下拉选择月份</p>
+	<p><b>yearChangeable</b> {Boolean} <br />是否可以下拉选择年份</p>
+	<p><b>firstDay</b> {Number} <br />每周的起始时间，0表示周日</p>
+	<p><b>date</b> {String} <br />默认选择的日期 2015/08/20 | 2015-08-20</p>
+	<p><b>minDate</b> {String} <br />最小可选日期 2015/08/10 | 2015-08-10</p>
+	<p><b>maxDate</b> {String} <br />最大可选日期 2015/08/28 | 2015-08-28</p>
+	
+	<h2>Methods</h2>
+	<p><b>select(dateStr)</b><br />选择日期，yyyy-mm-dd格式或yyyy/mm/dd</p>
+	<p><b>destroy</b><br />销毁组件</p>
+	<p><b>maxDate</b>, <b>minDate</b>, <b>date</b>, <b>selectedDate</b> <br />设置日历的各属性，设置好后需要执行refresh刷新界面</p>
+	<p><b>refresh</b><br />刷新日历，当修改option后需要调用此方法</p>
+	
+	<h2>Events</h2>
+	<p><b>select(e, date, formatDate)</b><br />选择日期后触发</p>
+	
+</div>
+
+<script>
+Tea.use("ui/widget/Calendar/Calendar", function(Calendar){
+	window.calendar = new Calendar({
+		el: '#calendar',
+		//className: 'ios7',
+		swipeable: true,
+		//monthChangeable: true,
+		//yearChangeable: true,
+		firstDay: 0,
+		date: '2015/08/20',
+		//minDate: '2015/08/10',
+		//maxDate: '2015/08/24'
+	});
+	
+	calendar.bind('select', function(e, date, format){
+		console.log(format);
+	});
+});
+</script>

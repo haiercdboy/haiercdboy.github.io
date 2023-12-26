@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>demo</title>
+<style>
+.demo{
+	color:#666;
+	padding:20px;
+	background:#eee;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+	<p>
+    https://github.com/seajs/seajs/issues/258<br>
+    https://github.com/seajs/seajs/issues/260</p>
+</div>
+
+<script src="/static_proxy/Tea.js"></script>
+<script>
+Tea.config({
+    base: "../js"
+});
+
+Tea.use("demo", function(Demo){
+	var set = Demo.prototype.set;
+	Demo.prototype.set = function(){
+		console.log('set injected!');
+		set.apply(this, arguments);
+	}
+	
+	var demo = new Demo();
+    demo.set('name', 'sean');
+    console.log('injected:' + demo.get('name'));
+	
+	/*var each = $.fn.each;
+	$.fn.each = function(){
+		console.log('each');
+		return each.apply(this, arguments);
+	}
+	$('body').each(function(){
+		console.log(this);
+	});*/
+});
+</script>
+
+</body>
+</html>

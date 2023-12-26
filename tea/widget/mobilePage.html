@@ -1,0 +1,100 @@
+<style type="text/css">
+.main{
+	position: absolute;
+	left: 0;
+	top: 45px;
+	width: 100%;
+	bottom: 0;
+}
+.main div{
+	text-align: center;
+	padding-top: 10px;
+}
+.main a{
+	display: inline-block;
+	padding: 20px;
+	background: orange;
+	margin: 10px 0;
+	color: #fff;
+	border-radius: 5px;
+}
+.main .back{
+	margin:0 30px;
+	color: #333;
+	background-color: #e1e1e1;
+}
+</style>
+
+<header class="tea-header"> 
+	<a href="../index.html" class="tea-header-left"><i class="tea-icon tea-icon-back"></i></a>
+	<span>页面切换</span> 
+</header>
+<div class="main">
+	<div id="tea-page-1" data-frozen class="test1" style="display: none;">
+		1 - 需切换为手机模式 <p><a id="backHome" href="javascript:;" class="back">back</a> <a href="javascript:;" id="btn1">to page 3</a></p>
+		
+		<div class="demo">
+			<a href="widget/mobilePage-5.html">MobilePage模拟腾讯新闻APP交互体验</a>
+			<a href="widget/mobilePage-6.html">MobilePage自定义动画效果之3D翻页</a>
+			<a href="widget/mobilePage-1.html">MobilePage自定义动画效果之活动页面示例</a>
+			<a href="widget/mobilePage-4.html">MobilePage还能做Banner图片的切换</a>
+		</div>
+		
+		<div class="doc">
+			<h2>初始化参数</h2>
+			<p>@param {Object} params</p>
+			<p><b>el</b> {String|dom|$}<br />指定页面的父容器</p>
+			<p><b>pages</b> {String|dom|$}<br />页面selector，默认查找el的子级元素</p>
+			<p><b>homePage</b> {String|dom|$}<br />指定首页，默认currentPage</p>
+			<p><b>currentPage</b> {String|dom|$}<br />指定第一个显示的页面，默认pages的第一个</p>
+			
+			<p><b>pageClass</b> = 'tea-page' {String}<br />页面类名</p>
+			<p><b>nextClass</b> = 'tea-page-next' {String} <br />下一页类名</p>
+			<p><b>prevClass</b> = 'tea-page-prev' {String}<br />上一页类名</p>
+			<p><b>pageInClass</b> = 'tea-page-in' {String}<br />当前要显示页面的类名</p>
+			<p><b>transitionClass</b> = 'tea-transition' {String}<br />过渡动画总控开关类名</p>
+			<p><b>touchEndClass</b> = 'tea-touch-end' {String}<br />touch翻页时，当touchend触发时加上的类名</p>
+			
+			<p><b>touchBack</b> = true {Boolean} <br />是否启用滑动上翻，回到上一页</p>
+			<p><b>touchNext</b> = false {Boolean} <br />是否启用滑动下翻，打开下一页</p>
+			<p><b>touchableRate</b> = 1 {Number} <br />touch翻页的响应区域，用小数表示，.1表示仅在页面左侧10%范围内开始触摸时才响应滑动翻页动画，最大值为1，表示整个页面touch时都可以响应翻页动作</p>
+			<p><b>touchableAtan</b> = .5 {Number} <br />响应touch翻页时水平滑动时的角度，用数值表示，1表示45度∠，小于1则小于45度，大于1则大于45度</p>
+			<p><b>touchBackRate</b> = .3 {Number} <br />要滑动多少距离才回退到上一页，用小数表示，如.1表示滑动页面的10%就会回到上一页，最大值为1</p>
+			<p><b>transition</b> = 'X' {String} <br />横向滑动还是竖向滑动(Y)</p>
+			<p><b>effect</b> = true {Boolean} <br />是否需要过场动效</p>
+			<p><b>adjustDom</b> = false {Boolean} <br />是否需要动态调整Dom位置</p>
+			<p><b>continuous</b> = false {Boolean} <br />是否可循环滑动</p>
+			
+			<h2>Dom Binded Attrs</h2>
+			<p><b>data-frozen</b> <br />可用值有 '' | 'back' | 'next'，分别表示当前页面禁用滑动翻页、禁用上翻、禁用下翻</p>
+			<p><b>data-touchback</b> <br />绑定即表示当前页允许上翻</p>
+			<p><b>data-touchnext</b> <br />绑定即表示当前页允许下翻</p>
+			
+			<h2>Attributes</h2>
+			<p><b>homePage</b> <br />首页id</p>
+			<p><b>page</b> <br />当前页id</p>
+			<p><b>pageOut</b> <br />上一页id</p>
+			
+			<h2>Methods</h2>
+			<p><b>back</b> <br />返回上一页</p>
+			<p><b>backHome</b> <br />返回首页</p>
+			<p><b>page(id, content)</b> <br />打开指定页面，并可以设置打开页面的内容</p>
+			<p><b>enableTouch(type, selector)</b> <br />启用滑动翻页，可以指定某一页面启用</p>
+			<p><b>disableTouch(type, selector)</b> <br />禁止滑动翻页，可以指定某一页面禁用</p>
+			<p><b>enableEffect</b> <br />启用过场动效</p>
+			<p><b>disableEffect</b> <br />禁用过场动效</p>
+			
+			<h2>Events</h2>
+			<p><b>beforePageShow(e, idIn, idOut)</b> <br />监听页面显示，有页面切换动作时立即触发</p>
+			<p><b>beforePageOut(e, idOut, idIn)</b> <br />监听页面退出，有页面切换动作时立即触发</p>
+			<p><b>pageShow(e, idIn, idOut)</b> <br />监听页面显示，仅当动画完成时触发</p>
+			<p><b>pageShow:pageId(e, idOut)</b> <br />监听某一页面显示，仅当动画完成时触发</p>
+			<p><b>pageOut(e, idOut, idIn)</b> <br />监听页面退出，仅当动画完成时触发</p>
+			<p><b>pageOut:pageId(e, idIn)</b> <br />监听某一页面退出，仅当动画完成时触发</p>
+			<p><b>swiping(e, $pageOut, $pageIn, rate, move, offset)</b> <br />监听页面滑动事件 <br />$pageOut：要移出的页面 <br />$pageIn：要移入的页面,  <br />rate：滑动距离的百分比<br />move：滑动距离<br />offset：移入页面需要移动的距离</p>
+
+		</div>
+	</div>
+	<div id="tea-page-2" class="test2" style="background: brown; display: none;">2-touchable <p style="height: 1000px;"><a href="javascript:;" class="back">back</a> <a href="javascript:;" id="btn2">new page</a></p></div>
+	<div id="tea-page-3" data-frozen class="test3" style="background: blueviolet; display: none;">3-frozen <p><a href="javascript:;" class="back">back</a> <a href="javascript:;" id="btn3">to page 2</a> <a href="javascript:;" id="btn4">new page</a></p></div>
+</div>

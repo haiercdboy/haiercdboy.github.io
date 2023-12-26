@@ -1,0 +1,57 @@
+.tea-pages{
+	overflow: hidden;
+}
+
+body.tea-pages{
+	margin: 0;
+}
+
+.tea-page {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: auto;
+	background-color: #fff;
+	display: none;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.tea-page-next {
+	z-index: 3;
+}
+
+.tea-page-prev {
+	z-index: 1;
+}
+
+.tea-page-in {
+	z-index: 2;
+}
+
+.tea-transition>.tea-page {
+	transition-duration: .26s;
+	transition-timing-function: ease-out;
+}
+
+/*手指滑动松开后的动画时间*/
+.tea-touch-end>.tea-page {
+	transition-duration: .2s;
+}
+
+
+/*CSS自定义动画效果*/
+.tea-page-next {
+	transform: translate3d(100%, 0, 0);
+}
+
+.tea-page-prev {
+	transform: translate3d(-20%, 0, 0);
+}
+
+.tea-page-in {
+	transform: translate3d(0, 0, 0);
+}

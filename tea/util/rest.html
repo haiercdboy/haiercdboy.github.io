@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试localStorage</title>
+</head>
+<body>
+<script src="/static_proxy/Tea.js"></script>
+<script>
+Tea.use(['lib/zepto', 'util/REST'], function($, REST){
+	REST.read({
+		hold: false,
+		url: '/examples/util/tpl.html?a'
+	});
+	
+	REST.read({
+		hold: true,
+		url: '/examples/util/tpl.html?b'
+	});
+	
+	REST.goon();
+	
+	
+	
+	REST.read({
+		url: '/examples/util/tpl.html?c'
+	});
+	
+	REST.goon();
+});
+</script>
+</body>
+</html>

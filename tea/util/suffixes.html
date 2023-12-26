@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试suffixes</title>
+</head>
+<body>
+<script src="/static_proxy/Tea.js"></script>
+<script>
+Tea.config({
+	localStorage: true,
+	//offline: true,
+	suffixes: {
+		//'lib/zepto': '88sdf0023a',
+		'util/moduleMemory': '3234d23sd2',
+		'util/REST': '213sdfs32Sq'
+	}
+});
+
+Tea.use(['lib/zepto', 'util/moduleMemory'], function($, mod){
+	mod.renderTpl('/examples/util/tpl.html', {name: 'sean'}).done(function(html){
+		$(html).appendTo('body');
+	});
+});
+</script>
+</body>
+</html>

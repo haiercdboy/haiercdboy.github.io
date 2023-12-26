@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>腾讯新闻</title>
+<style>
+html,
+body{
+	margin: 0;
+	height: 100%;
+	background: #eee;
+}
+img{
+	width: 100%;
+	display: block;
+}
+
+.tea-pages{
+	background: #000;
+}
+.pages{
+	background: #eee;
+}
+
+.news,
+.news-cates,
+.detail{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #eee;
+}
+
+div.info {
+	background: #2b3141;
+}
+.info.tea-page-prev{
+	transform: translateX(0);
+}
+.main-page.tea-page-next{
+	display: block!important;
+	transform: translateX(75%);
+}
+
+
+header{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #d7d7d7;
+	background: #f4f4f4;
+	position: relative;
+	z-index: 1;
+}
+.avatar{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	border-radius: 15px;
+	overflow: hidden;
+	position: absolute;
+	left: 10px;
+	top: 13px;
+}
+.avatar img{
+	width: 25px;
+	height: 25px;
+	display: block;
+}
+aside{
+	position: absolute;
+	left: 45px;
+	right: 10px;
+	top: 13px;
+	height: 25px;
+	line-height: 27px; 
+	overflow: hidden;
+	font-size: 20px;
+}
+aside span{
+	display: inline-block;
+	width: 16.66%;
+	text-align: center;
+}
+aside .cur{
+	color: #2f66a8;
+}
+aside i{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 16.66%;
+	height: 25px;
+	border-radius: 5px;
+	background: #e0e0e0;
+	z-index: -1;
+	transition: transform .15s;
+}
+.pages{
+	position: absolute;
+	left: 0;
+	top: 51px;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+}
+.pages span{
+	display: block;
+	width: 300px;
+	height: 300px;
+	font-size: 300px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -200px 0 0 -150px;
+	z-index: 1;
+	text-align: center;
+	color: #000;
+	opacity: .2;
+	text-shadow: 3px 3px 3px rgba(0,0,0,.5);
+}
+.pages img{
+	width: 100%;
+	display: block;
+}
+.pages .tea-page-prev{
+	transform: translateX(-100%);
+}
+
+.news-content.tea-page-prev{
+	transform: translateX(-100%);
+}
+
+.news.tea-page-prev{
+	transform: translateX(0) scale(.96);
+	opacity: .6;
+}
+</style>
+</head>
+
+<body>
+<div class="news" data-frozen="back">
+	<div class="news-cates">
+		<div class="info" id="info" style="display: none;">
+			<img src="../images/info.jpg" />
+		</div>
+		<div class="main-page" id="main">
+			<header>
+				<span class="avatar"><img src="../images/avatar.jpg" /></span>
+				<aside>
+					<span data-page="tea-page-1" class="cur">要闻</span
+					><span data-page="tea-page-2">军事</span
+					><span data-page="tea-page-3">上海</span
+					><span data-page="tea-page-4">科技</span
+					><span data-page="tea-page-5">数码</span
+					><span data-page="tea-page-6">财经</span
+					><i></i>
+				</aside>
+			</header>
+			
+			<div class="pages">
+				<div data-index="0"><img src="../images/page.jpg" /><span>1</span></div>
+				<div style="display: none;" data-index="1"><img src="../images/page.jpg" /><span>2</span></div>
+				<div style="display: none;" data-index="2"><img src="../images/page.jpg" /><span>3</span></div>
+				<div style="display: none;" data-index="3"><img src="../images/page.jpg" /><span>4</span></div>
+				<div style="display: none;" data-index="4"><img src="../images/page.jpg" /><span>5</span></div>
+				<div style="display: none;" data-index="5"><img src="../images/page.jpg" /><span>6</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="news-detail" style="display: none;">
+	<div class="detail">
+		<div data-frozen="back" class="news-content"><img src="../images/detail.jpg" /></div>
+		<div data-frozen="next" class="news-comments"><img src="../images/comment.jpg" /></div>
+	</div>
+</div>
+
+<!--<script src="/static_proxy/Tea.js"></script>-->
+<script src="http://bqq.gtimg.com/tea/latest/Tea.js"></script>
+<script>
+Tea.config({
+    base: "../js",
+});
+
+Tea.use(["ui/widget/MobilePage", "lib/zepto"], function(MobilePage, $){
+	var $menus = $('aside span'),
+		$articles = $('.pages').children(),
+		$flag = $('aside i');
+		
+	var main = new MobilePage({
+		el: '.news-cates',
+		homePage: '.info',
+		currentPage: '.main-page',
+		touchBack: false
+	});
+	
+	$('.avatar').on('tap', function(){
+		main.back();
+	});
+	
+	main.on('pageShow', function(e, id){
+		if(id === 'info') {
+			$('.main-page').on('tap', function(){
+				main.next();
+			});
+		} else {
+			$('.main-page').off();
+		}
+	});
+	
+	
+	
+	
+	/*========================================================*/
+	var articles = new MobilePage({
+		el: '.pages',
+		touchNext: true,
+		touchBackRate: .3,
+		//continuous: true,
+		effect: false,
+	});
+	
+	articles.on('swiping', function(e, $pageOut, $pageIn, rate, move, offset){
+    	e.stopPropagation();
+	});
+	
+	articles.on('beforePageShow', function(e, id){
+		var index = $articles.filter('#' + id).data('index'),
+			$menu = $menus.eq(index),
+			left = $menu.offset().left - 45;
+		
+		$menu.addClass('cur').siblings('.cur').removeClass('cur');
+		$flag.css({
+			transform: 'translateX(' + left + 'px)'
+		});
+		
+		console.log(id);
+	});
+	
+	$menus.on('tap', function(e){
+		var $target = $(e.currentTarget),
+			id = $target.data('page');
+		
+		articles.page(id);
+	});
+	
+	
+	
+	
+	/*========================================================*/
+	var news = new MobilePage({
+		touchBackRate: .4
+	});
+	
+	$articles.bind('doubleTap', function(){
+		news.next();
+	});
+	
+	news.on('swiping', function(e, $pageOut, $pageIn, rate, move, offset){
+		/*
+		 * $pageOut：要移出的页面, 
+		 * $pageIn：要移入的页面, 
+		 * rate：滑动距离的百分比, 
+		 * move：滑动距离, 
+		 * offset：移入页面需要移动的距离
+		 */
+		
+		move > 0 && $pageIn.css({
+    		transform: 'scale(' + (rate*.04 + .96) + ')',
+    		opacity: rate * .4 + .6
+    	});
+    	
+    	e.stopPropagation();
+	});
+	
+	
+	
+	/*========================================================*/
+	var detail = new MobilePage({
+		el: '.detail',
+		touchNext: true,
+		touchBackRate: .4
+	});
+	
+	detail.on('swiping', function(e, $pageOut, $pageIn, rate, move, offset){
+    	e.stopPropagation();
+	});
+	
+});
+</script>
+
+</body>
+</html>
